@@ -43,7 +43,7 @@ fi
 # Vundle install
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Clone my vimrc
-git clone https://github.com/jolth/vimrc.git ~/.myvimrc/
+git clone https://github.com/jolth/vimrc_OLD.git ~/.myvimrc/
 # Configure and Install
 ln -s ~/.myvimrc/vimrcs/vimrc ~/.vimrc
 mkdir ~/.vim/{colors,backup}

@@ -2,9 +2,9 @@
 #
 # Script to install my vimrc
 #
-# curl -sL https://raw.githubusercontent.com/jolth/vimrc/master/install.sh | bash -
+# curl -sL https://raw.githubusercontent.com/jolth/vimrc_OLD/master/install.sh | bash -
 # or
-# wget -qO- https://raw.githubusercontent.com/jolth/vimrc/master/install.sh | bash -
+# wget -qO- https://raw.githubusercontent.com/jolth/vimrc_OLD/master/install.sh | bash -
 #
 
 PWD=$(pwd)

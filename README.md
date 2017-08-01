@@ -18,9 +18,9 @@ https://jolthgs.wordpress.com/2016/06/11/install-vim-with-support-for-python
 
 - Install
 
-    `curl -sL https://raw.githubusercontent.com/jolth/vimrc/master/install.sh | bash - `
+    `curl -sL https://raw.githubusercontent.com/jolth/vimrc_OLD/master/install.sh | bash - `
 
     or 
      
-    `wget -qO- https://raw.githubusercontent.com/jolth/vimrc/master/install.sh | bash -`
+    `wget -qO- https://raw.githubusercontent.com/jolth/vimrc_OLD/master/install.sh | bash -`
 

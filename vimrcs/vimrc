@@ -45,9 +45,34 @@ let g:mapleader = ","
 "" Fast saving
 "Para que funcione debes escribir en consola: 
 "echo "bind -r '\C-s' ; stty -ixon" >> ~/.bashrc;source ~/.bashrc
-nmap <c-s> :w<cr>
+"nmap <c-s> :w<cr>
 "within a document while in 'insert' mode will escape to normal mode
-imap <c-s> <esc>:w<cr>a     
+"imap <c-s> <esc>:w<cr>a     
+
+" exit to normal mode with 'jk'
+"inoremap jj <ESC>
+inoremap jk <esc>
+
+" normal mode: saves the file and exits. keypress ,,
+nnoremap <leader><leader> :x<cr>
+" insert mode: saves the file and exits. keypress ,,
+inoremap <leader><leader> <esc>:xa<cr>
+" allow quit via single keypress (Q). If you have unsaved buffers, it'll prompt you before exiting.
+map Q :qa<CR>
+
+"put this in your shell: $ echo "bind -r '\C-s' ; stty -ixon" >> ~/.bashrc;source ~/.bashrc
+"Ctrl + s: to save,
+"ctrl + d: to save and exit,
+"ctrl + q: to exit discarding changes.
+inoremap <C-s> <esc>:w<cr>                 " save files
+nnoremap <C-s> :w<cr>
+inoremap <C-d> <esc>:wq!<cr>               " save and exit
+nnoremap <C-d> :wq!<cr>
+"inoremap <C-q> <esc>:q<cr>                 " quit
+"nnoremap <C-q> :q<cr>
+inoremap <C-q> <esc>:qa!<cr>               " quit discarding changes
+nnoremap <C-q> :qa!<cr>
+
 
 "################################################################################
 " > Vundle.vim
